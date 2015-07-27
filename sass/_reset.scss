@@ -1,0 +1,21 @@
+/**
+ * Style resets for Quikr Homes
+ *
+ * Because browsers be bitches.
+ *
+ * @author Rizwan Iqbal <riqbal@quikr.com>
+ */
+
+html,
+body,
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+*, *::after, *::before { box-sizing: border-box; }

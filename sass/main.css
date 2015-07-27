@@ -1,0 +1,326 @@
+/**
+ * Main CSS file for Quikr Homes.
+ *
+ * @author Rizwan Iqbal <riqbal@quikr.com>
+ * @version 1.0
+ */
+/**
+ * Base styles for Quikr Homes
+ *
+ * This helps us keep all common code in one place. We ca decide
+ * the order in which we include our dependencies. Also, does not 
+ * crowd the main.scss file, keeping it loosely coupled from the 
+ * underlying code.
+ *
+ * @author Rizwan Iqbal <riqbal@quikr.com>
+ */
+/**
+// Variables for stylesheets belonging to Quikr Homes
+ *
+// We are writing everything from scratch cause thats how companies are built
+ *
+ * @author Rizwan Iqbal <riqbal@quikr.com>
+ */
+/**
+ * Mixins for stylesheets for Quikr Homes
+ *
+ * We are writing everything from scratch cause thats how companies are built
+ *
+ * @author Rizwan Iqbal <riqbal@quikr.com>
+ */
+/**
+ * Style resets for Quikr Homes
+ *
+ * Because browsers be bitches.
+ *
+ * @author Rizwan Iqbal <riqbal@quikr.com>
+ */
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%; }
+
+*, *::after, *::before {
+  box-sizing: border-box; }
+
+/**
+ * Grid Layout for Quikr Homes
+ *
+ * This a flex grid aimed to take advantage of sovling common
+ * web-design problems with Flex. To understand more about the grid structure,
+ * please refer to this post:
+ * http://philipwalton.github.io/solved-by-flexbox/demos/grids/
+ *
+ * And this repository:
+ * https://github.com/philipwalton/solved-by-flexbox
+ *
+ * @author Rizwan Iqbal <riqbal@quikr.com>
+ */
+.grid {
+  display: flex;
+  flex-wrap: wrap; }
+  .grid-cell {
+    flex: 1; }
+    .grid-cell--top {
+      align-self: flex-start; }
+    .grid-cell--bottom {
+      align-self: flex-end; }
+    .grid-cell--center {
+      align-self: center; }
+  .grid--gutters {
+    margin: -0.625em 0 0 -0.625em; }
+    .grid--gutters > .grid-cell {
+      padding: 0.625em 0 0 0.625em; }
+  .grid--top {
+    align-items: flex-start; }
+  .grid--bottom {
+    align-items: flex-end; }
+  .grid--center {
+    align-items: center; }
+  .grid--fit > .grid-cell {
+    flex: 1; }
+  .grid--col1-2 {
+    flex: 0 0 50%; }
+  .grid--col1-3 {
+    flex: 0 0 33.3333%; }
+  .grid--col1-4 {
+    flex: 0 0 25%; }
+  .grid--col1-3by2 {
+    flex: 0 0 66.6666%; }
+
+.grid.container {
+  margin: 0 0.625em 0 0 !important; }
+
+@media (max-width: 47.9375em) {
+  .grid--full > .grid-cell {
+    flex: 0 0 100%; } }
+@media (min-width: 47.9375em) and (max-width: 63.9375em) {
+  .grid--full > .grid-cell {
+    flex: 0 0 100%; } }
+@media (min-width: 63.9375em) {
+  .grid.container {
+    max-width: 1440px;
+    margin: 0 auto !important; } }
+body {
+  font-size: 100%;
+  line-height: 1.125em; }
+
+@media (max-width: 47.9375em) {
+  p {
+    font-size: 1.2em; } }
+@media (min-width: 63.9375em) {
+  p {
+    font-size: 1.6em; } }
+
+body {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100%; }
+
+.site {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #fff;
+  display: flex;
+  flex-direction: column; }
+
+header {
+  -webkit-box-flex: none;
+  -moz-box-flex: none;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none; }
+
+header.fixed {
+  /*background: rgba(0, 0, 0, 0.666);*/
+  position: fixed;
+  width: 100%; }
+  header.fixed .top-header {
+    padding: 1em 2em/2; }
+
+.top-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1em 2em; }
+
+.blc-logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  -webkit-align-items: baseline;
+  -moz-align-items: baseline;
+  align-items: baseline; }
+  .blc-logo img {
+    width: 14rem; }
+
+.navigation {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  flex-direction: row;
+  font-family: 'Muli', sans-serif;
+  justify-content: flex-end; }
+  .navigation ul {
+    list-style: none; }
+    .navigation ul li {
+      display: inline-block; }
+      .navigation ul li:nth-child(1n) {
+        margin-left: 4em; }
+      .navigation ul li:first-child {
+        margin-left: 0; }
+      .navigation ul li a {
+        color: rgba(255, 255, 255, 0.9);
+        font-weight: 300;
+        text-decoration: none; }
+
+.background-image {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: block;
+  /*background: url(https://s3.amazonaws.com/files.creativemarket.com/images/screenshots/products/28/280/280567/fuppflzmofimposa23ox1tyg2cm3dg6dezmscelkzistkc9bx7gqfxn0cjldeoae-o.jpg?1419322672) no-repeat center center fixed;
+  background: url(../../images/IMG_7975.jpg) no-repeat center center fixed;
+  background: url(../../images/IMG_8004.jpg) no-repeat center center fixed;*/
+  background: url(../../images/table_setup.jpg) no-repeat center center fixed;
+  height: 100%;
+  background-size: cover;
+  /*	-webkit-filter: blur(5px);
+  	-moz-filter: blur(5px);
+  	-o-filter: blur(5px);
+  	-ms-filter: blur(5px);
+  	filter: blur(5px);*/ }
+
+.content {
+  /*position: fixed;*/
+  /*left: 0;*/
+  /*right: 0;*/
+  /*z-index: 9999;*/ }
+  .content-text {
+    font-weight: 300;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    padding: 1em 2em; }
+    .content-text ul {
+      margin: 1em 2em; }
+
+.main {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center; }
+
+.hero {
+  /*background:rgba(0,0,0,0.5);*/
+  text-align: center;
+  text-shadow: 1px 1px 1px black;
+  padding: 1em 2em; }
+  @media (min-width: 63.9375em) {
+    .hero {
+      margin: 1em 0; } }
+  .hero h1, .hero h2, .hero h3 {
+    font-family: 'Nunito', sans-serif;
+    margin: 0 0 0.5rem 0; }
+  .hero h1 {
+    font-size: 40px;
+    font-weight: 300;
+    font-stretch: semi-expanded;
+    line-height: 1em; }
+  .hero h2 {
+    font-size: 32px;
+    font-weight: 300;
+    font-stretch: semi-expanded;
+    line-height: 1em; }
+  .hero h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    font-stretch: semi-expanded;
+    line-height: 1em; }
+  .hero p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 32px;
+    line-height: 1em;
+    margin: 0; }
+  .hero .salads {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 9px solid transparent;
+    border-right: 9px solid #ffffff;
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    margin-top: -20px;
+    margin-left: 90px; }
+    .hero .salads:after {
+      content: "";
+      position: absolute;
+      border: 0 solid transparent;
+      border-top: 3px solid #ffffff;
+      border-radius: 30px 0 0 0;
+      top: -20px;
+      left: -30px;
+      width: 30px;
+      height: 30px;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg); }
+  .hero-wrapper {
+    /*background: url(../../images/table_setup.jpg) center top no-repeat;*/
+    background: url(../../images/hero-bg.jpg) center center no-repeat;
+    background-size: cover;
+    height: 450px;
+    margin-top: 1em;
+    position: relative; }
+
+.signup-wrapper {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  height: 450px;
+  margin: 0 2em;
+  padding: 30px; }
+  @media (min-width: 63.9375em) {
+    .signup-wrapper {
+      margin: 3em 2em; } }
+
+/* to test media query break points */
+@media (max-width: 47.9375em) {
+  .test {
+    background: #f00; } }
+@media (min-width: 47.9375em) and (max-width: 63.9375em) {
+  .test {
+    background: #0f0; } }
+@media (min-width: 63.9375em) {
+  .test {
+    background: #00f; } }
+
+/*# sourceMappingURL=main.css.map */
