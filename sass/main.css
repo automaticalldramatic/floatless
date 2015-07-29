@@ -5,6 +5,13 @@
  * @version 1.0
  */
 /**
+ * Theme CSS file for Quikr Homes.
+ * This file includes all theme related partial files and includes grid base file.
+ *
+ * @author Jaydev Gajera <jaydev.gajera@quikr.com>
+ * @version 1.0
+ */
+/**
  * Base styles for Quikr Homes
  *
  * This helps us keep all common code in one place. We ca decide
@@ -22,7 +29,7 @@
  * @author Rizwan Iqbal <riqbal@quikr.com>
  */
 /**
- * Mixins for stylesheets for Quikr Homes
+ * Grid related mixins.
  *
  * We are writing everything from scratch cause thats how companies are built
  *
@@ -90,8 +97,12 @@ html, body {
     flex: 0 0 33.3333%; }
   .grid--col1-4 {
     flex: 0 0 25%; }
+  .grid--col1-5 {
+    flex: 0 0 20%; }
   .grid--col1-3by2 {
     flex: 0 0 66.6666%; }
+  .grid--col1-4by3 {
+    flex: 0 0 75%; }
 
 .grid.container {
   margin: 0.625em 0.625em 0 0 !important; }
@@ -117,6 +128,24 @@ body {
   p {
     font-size: 1.6em; } }
 
+/**
+ * Variables for stylesheets for Quikr Homes
+ *
+ * 
+ * @author Jaydev Gajera <jaydev.gajera@quikr.com>
+ */
+/**
+ * Fonts for stylesheets for Quikr Homes
+ *
+ * 
+ * @author Jaydev Gajera <jaydev.gajera@quikr.com>
+ */
+/**
+ * Mixins for stylesheets for Quikr Homes
+ *
+ * 
+ * @author Jaydev Gajera <jaydev.gajera@quikr.com>
+ */
 body {
   background-attachment: fixed;
   background-repeat: no-repeat;

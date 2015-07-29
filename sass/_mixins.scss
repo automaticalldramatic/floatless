@@ -1,5 +1,5 @@
 /**
- * Mixins for stylesheets for Quikr Homes
+ * Grid related mixins.
  *
  * We are writing everything from scratch cause thats how companies are built
  *
@@ -7,19 +7,17 @@
  */
 
 @mixin phones {
-	// @media (min-width: #{$small-width}) and (max-width: #{$large-width - 0.1em}) {
-
-		@media (max-width: #{$small-width}){
+	@media (max-width: #{$small-width}){
 
 		@content;
 	}
 }
 
 @mixin tabs {
-	 @media (min-width: #{$small-width}) and (max-width: #{$large-width}) {
+	@media (min-width: #{$small-width}) and (max-width: #{$large-width}) {
 
 		@content;
-	}
+	}	
 }
 
 @mixin desktops {
