@@ -20,12 +20,3 @@ body {
 }
 
 
-p {
-	@include phones {
-		font-size: 1.2em;
-	}
-
-	@include desktops {
-		font-size: 1.6em;
-	}
-}

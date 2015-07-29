@@ -29,7 +29,7 @@
  * @author Rizwan Iqbal <riqbal@quikr.com>
  */
 /**
- * Grid related mixins.
+ * Grid related mixins. Keeping all 'Flex' related mixins here.
  *
  * We are writing everything from scratch cause thats how companies are built
  *
@@ -121,13 +121,6 @@ body {
   font-size: 100%;
   line-height: 1.125em; }
 
-@media (max-width: 47.9375em) {
-  p {
-    font-size: 1.2em; } }
-@media (min-width: 63.9375em) {
-  p {
-    font-size: 1.6em; } }
-
 /**
  * Variables for stylesheets for Quikr Homes
  *
@@ -146,6 +139,10 @@ body {
  * 
  * @author Jaydev Gajera <jaydev.gajera@quikr.com>
  */
+ul,
+ol {
+  list-style-type: none; }
+
 body {
   background-attachment: fixed;
   background-repeat: no-repeat;
