@@ -159,20 +159,20 @@ body {
   /* stops bg color from leaking outside the border: */ }
 
 .button-primary--small {
-  background: #00BE40; }
+  background: #1A222C; }
   .button-primary--small:hover {
-    background: #009532;
+    background: #00BE40;
     transition: all 0.3s ease; }
   .button-primary--small:active {
-    background: #003f15; }
+    background: black; }
 
 .button-primary--large {
-  background: #1A222C; }
+  background: #00BE40; }
   .button-primary--large:hover {
-    background: #0b0e12;
+    background: #009532;
     transition: all 0.3s ease; }
   .button-primary--large:active {
-    background: black; }
+    background: #003f15; }
 
 .button-secondary {
   background: #008BCF; }
@@ -182,14 +182,6 @@ body {
   .button-secondary:active {
     background: #003550; }
 
-/*
-.button-primary {
-  @include border-top-radius(10px);
-  @include border-right-radius(8px);
-  @include border-bottom-radius(10px);
-  @include border-left-radius (6px);
-}
-*/
 body {
   background-attachment: fixed;
   background-repeat: no-repeat;
