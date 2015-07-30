@@ -5,7 +5,12 @@
  * @version 1.0
  */
 
+
+// To avoid any potential issue with character encoding 
+@charset 'utf-8';
+
 @import "theme/theme";
+
 
 body { 
 //	@include linear-gradient(#134E5E, #71B280);
@@ -171,6 +176,8 @@ header.fixed {
 }
 
 /* to test media query break points */
+
+
 .test{
 
 	@include phones {

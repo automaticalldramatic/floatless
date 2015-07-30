@@ -18,4 +18,56 @@ ol{
 	list-style-type: none ;
 }
 
+%padding-xs {
+  padding : 5px;
+}
 
+%padding-s {
+	padding : 10px;
+}
+
+%padding-m {
+	padding : 15px ;
+}
+
+%padding-l {
+	padding : 20px ;
+}
+
+body {
+	font-family : $font-stack;
+}
+
+
+.button {
+	display : inline-block ;
+	color: $color-white;
+	text-decoration:none;
+	padding:10px 20px;
+	margin: 5px 10px;
+	font-size: 14px ;
+	@include border-radius(3px);
+}
+
+.button-primary--small {
+	@include button-bg($bg-btn-primary-small);
+}
+
+.button-primary--large {
+	@include button-bg($bg-btn-primary-large);
+}
+
+.button-secondary {
+	@include button-bg($bg-btn-secondary);
+}
+
+
+
+/*
+.button-primary {
+  @include border-top-radius(10px);
+  @include border-right-radius(8px);
+  @include border-bottom-radius(10px);
+  @include border-left-radius (6px);
+}
+*/

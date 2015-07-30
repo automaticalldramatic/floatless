@@ -6,9 +6,6 @@
  */
 
 
-
-
-
 //---------------------------------------------------------------------------
 
 // To implement the clearfix to perticular HTML element
@@ -23,7 +20,6 @@
         clear: both;
     }
 }
-
 
 
 //---------------------------------------------------------------------------
@@ -64,6 +60,21 @@
      -webkit-border-top-left-radius: $radius;
      border-top-left-radius: $radius;
      background-clip: padding-box;
+}
+
+//---------------------------------------------------------------------------
+
+// button background with color transition
+
+@mixin button-bg($bg) {
+  background: $bg;
+  &:hover {
+    background:darken($bg,8%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background:darken($bg,25%);
+  } 
 }
 
 
