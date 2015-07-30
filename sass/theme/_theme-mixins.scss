@@ -7,7 +7,6 @@
 
 
 //---------------------------------------------------------------------------
-
 // To implement the clearfix to perticular HTML element
 
 @mixin clearfix() {
@@ -21,9 +20,7 @@
     }
 }
 
-
 //---------------------------------------------------------------------------
-
 // To make border rounded of any perticular HTML element
 
 
@@ -63,7 +60,6 @@
 }
 
 //---------------------------------------------------------------------------
-
 // button background with color transition
 
 @mixin button-bg($bg) {
@@ -75,7 +71,7 @@
         transition: all 0.3s ease;
       }
   }
-  
+
   @else {
       &:hover {
         background:darken($bg,8%);
@@ -86,6 +82,16 @@
   &:active {
     background:darken($bg,25%);
   } 
+}
+
+
+//---------------------------------------------------------------------------
+// Quickly center any element within its parent. Requires width or max-width to be set
+
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 

@@ -39,6 +39,9 @@ body {
 }
 
 
+//--------------------------------
+// Buttons 
+
 .button {
 	display : inline-block ;
 	color: $color-white;
@@ -46,6 +49,8 @@ body {
 	padding:10px 20px;
 	margin: 5px 10px;
 	font-size: 14px ;
+	border : none ;
+	cursor : pointer ;
 	@include border-radius(3px);
 }
 
