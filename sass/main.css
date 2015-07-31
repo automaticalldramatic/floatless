@@ -184,6 +184,30 @@ body {
   .button-secondary:active {
     background: #003550; }
 
+h1 {
+  font-size: 2rem;
+  margin: .67em 0; }
+
+h2 {
+  font-size: 1.5rem;
+  margin: .75em 0; }
+
+h3 {
+  font-size: 1.17rem;
+  margin: .83em 0; }
+
+h4 {
+  font-size: 1.12rem;
+  margin: 1em 0; }
+
+h5 {
+  font-size: .83rem;
+  margin: 1.5em 0; }
+
+h6 {
+  font-size: .75rem;
+  margin: 1.67em 0; }
+
 body {
   background-attachment: fixed;
   background-repeat: no-repeat;
