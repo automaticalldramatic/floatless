@@ -54,12 +54,37 @@
 @include phones{
 	.grid{
 		&--full > .grid-cell { flex: 0 0 100%; }
+		
+		.grid{     /* This is required for Opera mini. The grid layout will not be rendered properly without this on Opera mini.  */
+			display: flex;
+			flex-wrap: wrap;
+
+			.grid-cell { 
+				flex: 1;
+				&--top { align-self: flex-start; }
+				&--bottom { align-self: flex-end; }
+				&--center { align-self: center; }
+			}
+		}
+		
 	}	
 }
 
 @include tabs{
-	.grid{
+	.grid {
 		&--full > .grid-cell { flex: 0 0 100%; }
+
+		.grid {     /* This is required for Opera mini. The grid layout will not be rendered properly without this on Opera mini.  */
+			display: flex;
+			flex-wrap: wrap;
+
+			.grid-cell { 
+				flex: 1;
+				&--top { align-self: flex-start; }
+				&--bottom { align-self: flex-end; }
+				&--center { align-self: center; }
+			}
+		}
 	}	
 }
 

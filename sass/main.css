@@ -109,10 +109,34 @@ html, body {
 
 @media (max-width: 47.9375em) {
   .grid--full > .grid-cell {
-    flex: 0 0 100%; } }
+    flex: 0 0 100%; }
+  .grid .grid {
+    /* This is required for Opera mini. The grid layout will not be rendered properly without this on Opera mini.  */
+    display: flex;
+    flex-wrap: wrap; }
+    .grid .grid .grid-cell {
+      flex: 1; }
+      .grid .grid .grid-cell--top {
+        align-self: flex-start; }
+      .grid .grid .grid-cell--bottom {
+        align-self: flex-end; }
+      .grid .grid .grid-cell--center {
+        align-self: center; } }
 @media (min-width: 47.9375em) and (max-width: 63.9375em) {
   .grid--full > .grid-cell {
-    flex: 0 0 100%; } }
+    flex: 0 0 100%; }
+  .grid .grid {
+    /* This is required for Opera mini. The grid layout will not be rendered properly without this on Opera mini.  */
+    display: flex;
+    flex-wrap: wrap; }
+    .grid .grid .grid-cell {
+      flex: 1; }
+      .grid .grid .grid-cell--top {
+        align-self: flex-start; }
+      .grid .grid .grid-cell--bottom {
+        align-self: flex-end; }
+      .grid .grid .grid-cell--center {
+        align-self: center; } }
 @media (min-width: 63.9375em) {
   .wrapper {
     max-width: 1440px;
