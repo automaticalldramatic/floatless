@@ -46,15 +46,15 @@
 
 }
 
-.grid.container{
+.grid.container {
 	 margin: 0.625em 0.625em 0 0 !important; 
 }
 
 
-@include phones{
-	.grid{
+@include phones {
+	.grid {
 
-		.grid{     // This is required for Opera mini. The grid layout will not be rendered properly without this on Opera mini.  
+		.grid {     // This is required for Opera mini. The grid layout will not be rendered properly without this on Opera mini.  
 			display: flex;
 			flex-wrap: wrap;
 
@@ -67,8 +67,8 @@
 		}
 	}	
 	
-	.grid--full{
-		> .grid-cell{
+	.grid--full {
+		> .grid-cell {
 			flex: 0 0 100%;	
 		}
 
@@ -81,11 +81,11 @@
 
 }
 
-@include tabs{
+@include tabs {
 	
-	.grid{
+	.grid {
 
-		.grid{     // This is required for Opera mini. The grid layout will not be rendered properly without this on Opera mini.  
+		.grid {     // This is required for Opera mini. The grid layout will not be rendered properly without this on Opera mini.  
 			display: flex;
 			flex-wrap: wrap;
 
@@ -98,21 +98,21 @@
 		}
 	}	
 	
-	.grid--full{
-		> .grid-cell{
+	.grid--full {
+		> .grid-cell {
 			flex: 0 0 100%;	
 		}
 
-		.grid--full{
-			>.grid-cell{
+		.grid--full {
+			>.grid-cell {
 				flex: 0 0 100%;	
 			}
 		}
 	}
 }
 
-@include desktops{
-	.wrapper{
+@include desktops {
+	.wrapper {
 		max-width:1440px;
 		margin : 0 auto;
 	}
