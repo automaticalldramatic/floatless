@@ -1,46 +1,46 @@
 /**
- * Main CSS file for Quikr Homes.
+ * Main CSS file .
  *
- * @author Rizwan Iqbal <riqbal@quikr.com>
+ * @author Rizwan Iqbal <mailme@rizwaniqbal.com>
  * @version 1.0
  */
 /**
- * Theme CSS file for Quikr Homes.
+ * Theme CSS file .
  * This file includes all theme related partial files and includes grid base file.
  *
- * @author Jaydev Gajera <jaydev.gajera@quikr.com>
+ * @author Jaydev Gajera <jaydevonline@gmail.com>
  * @version 1.0
  */
 /**
- * Base styles for Quikr Homes
+ * Base styles 
  *
  * This helps us keep all common code in one place. We ca decide
  * the order in which we include our dependencies. Also, does not 
  * crowd the main.scss file, keeping it loosely coupled from the 
  * underlying code.
  *
- * @author Rizwan Iqbal <riqbal@quikr.com>
+ * @author Rizwan Iqbal <mailme@rizwaniqbal.com>
  */
 /**
 // Variables for stylesheets belonging to Quikr Homes
  *
 // We are writing everything from scratch cause thats how companies are built
  *
- * @author Rizwan Iqbal <riqbal@quikr.com>
+ * @author Rizwan Iqbal <mailme@rizwaniqbal.com>
  */
 /**
  * Grid related mixins. Keeping all 'Flex' related mixins here.
  *
  * We are writing everything from scratch cause thats how companies are built
  *
- * @author Rizwan Iqbal <riqbal@quikr.com>
+ * @author Rizwan Iqbal <mailme@rizwaniqbal.com>
  */
 /**
- * Style resets for Quikr Homes
+ * Style resets 
  *
  * Because browsers be bitches.
  *
- * @author Rizwan Iqbal <riqbal@quikr.com>
+ * @author Rizwan Iqbal <mailme@rizwaniqbal.com>
  */
 html,
 body,
@@ -56,7 +56,7 @@ html, body {
   box-sizing: border-box; }
 
 /**
- * Grid Layout for Quikr Homes
+ * Grid Layout 
  *
  * This a flex grid aimed to take advantage of sovling common
  * web-design problems with Flex. To understand more about the grid structure,
@@ -66,7 +66,7 @@ html, body {
  * And this repository:
  * https://github.com/philipwalton/solved-by-flexbox
  *
- * @author Rizwan Iqbal <riqbal@quikr.com>
+ * @author Rizwan Iqbal <mailme@rizwaniqbal.com>
  */
 .grid {
   display: flex;
@@ -150,22 +150,22 @@ body {
   line-height: 1; }
 
 /**
- * Variables for stylesheets for Quikr Homes
+ * Variables for stylesheets 
  *
  * 
- * @author Jaydev Gajera <jaydev.gajera@quikr.com>
+ * @author Jaydev Gajera <jaydevonline@gmail.com>
  */
 /**
- * Fonts for stylesheets for Quikr Homes
+ * Fonts for stylesheets 
  *
  * 
- * @author Jaydev Gajera <jaydev.gajera@quikr.com>
+ * @author Jaydev Gajera <jaydevonline@gmail.com>
  */
 /**
- * Mixins for stylesheets for Quikr Homes
+ * Mixins for stylesheets 
  *
  * 
- * @author Jaydev Gajera <jaydev.gajera@quikr.com>
+ * @author Jaydev Gajera <jaydevonline@gmail.com>
  */
 ul,
 ol {
